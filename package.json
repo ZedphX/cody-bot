@@ -1,0 +1,21 @@
+{
+  "name": "cody_bot",
+  "version": "1.0.0",
+  "description": "discord bot named cody",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "cody_bot"
+  },
+  "author": "Esteban Leivas",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "discord.js": "^12.3.1",
+    "eslint": "^7.11.0"
+  }
+}
