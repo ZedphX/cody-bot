@@ -26,6 +26,7 @@ config.messages.en.notAllowed = 'You are not allowed to use this command';
 config.messages.en.invalidUser = 'Invalid user';
 config.messages.en.pleaseMentionUser = 'Please mention a valid user';
 config.messages.en.lackPermission = 'Cody is not allowed to do this';
+config.messages.en.voiceChannel = 'You need to be in a voice channel!';
 //Spanish Messages
 config.messages.es.command_error = 'Hubo un error al intentar ejecutar el comando!';
 config.messages.es.notAllowed = 'No tienes permitido usar este comando';

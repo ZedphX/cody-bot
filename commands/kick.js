@@ -9,14 +9,13 @@ module.exports = {
 	execute(message, args) {
 		const {member, mentions} = message
 		if (!member.hasPermission('KICK_MEMBERS') && !member.hasPermission('ADMINISTRATOR')) 
-			message.channel.send(config.messages.en.notAllowed);
-		else {
-			let target = mentions.members.first()
+			return message.channel.send(config.messages.en.notAllowed);
+		
+		let target = mentions.members.first()
 
-			if(target) {
-				target.kick('Only they know')
-				message.channel.send(this.userKicked_en)
-			} else message.channel.send(config.messages.en.pleaseMentionUser)
-		}
+		if(target) {
+			target.kick('Only they know')
+			message.channel.send(this.userKicked_en)
+		} else message.channel.send(config.messages.en.pleaseMentionUser)
 	},
 };
