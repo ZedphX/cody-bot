@@ -12,7 +12,7 @@ config.images.logo = 'https://i.imgur.com/PBSEn32.png';
 config.images.sunglasses = 'https://i.imgur.com/OKh8882.png';
 
 config.status = {};
-config.status.activity = '-help Really Work In Progress';
+config.status.activity = '_help Really Work In Progress';
 config.status.status = 'online';
 
 config.messages = {};
