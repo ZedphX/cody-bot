@@ -1,13 +1,13 @@
 const music = require('../music');
 
 module.exports = {
-	name: 'play',
-    description_en: 'Play music from yt',
-	description_es: 'Reproduce musica de yt',
+	name: 'stop',
+    description_en: 'Stop playing music',
+	description_es: 'Detiene la música',
 	execute(message, args) {
 		if (message.channel.type === 'dm') return;
 
 		const serverQueue = music._queue.get(message.guild.id);
-		music.executeQueue(message, serverQueue);
+		music.stop(message, serverQueue);
 	},
 };

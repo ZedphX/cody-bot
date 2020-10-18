@@ -17,6 +17,8 @@ client.once('ready', () => {
     console.log(config.messages.start);
 });
 
+process.on('unhandledRejection', error => console.error('Uncaught Promise Rejection', error));
+
 client.on('message', message => {
     if (!message.content.startsWith(config.prefix) || message.author.bot) return;
     
